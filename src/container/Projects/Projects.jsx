@@ -10,16 +10,17 @@ import "./Projects.scss";
 const projects = [
     {
         title: "Portfolio Website",
-        description: "A modern portfolio Website made with React.",
+        description:
+            "A modern portfolio Website made with React, SASS & Framer-Motion.",
         projectLink: "netlify link",
-        codeLink: "github link",
+        codeLink: "https://github.com/lenientsonu/portfolio",
         imgUrl: images.portfolio,
-        tags: ["React", "Portfolio", "All"],
+        tags: ["Portfolio", "React", "All"],
     },
     {
         title: "Expense Tracker Project",
         description:
-            "An expense tracker project made with react with premium features.",
+            "An expense tracker project made with React with premium features.",
         projectLink: "https://lenientsonu-expense-tracker.netlify.app",
         codeLink: "https://github.com/lenientsonu/expense-tracker-react",
         imgUrl: images.expenseTracker,
@@ -65,19 +66,17 @@ const Projects = () => {
                 </h2>
 
                 <div className='app__project-filter'>
-                    {["Portfolio", "WebApp", "React", "All"].map(
-                        (item, index) => (
-                            <div
-                                key={index}
-                                onClick={() => handleProjectsFilter(item)}
-                                className={`app__project-filter-item app__flex p-text ${
-                                    activeFilter === item ? "item-active" : ""
-                                }`}
-                            >
-                                {item}
-                            </div>
-                        )
-                    )}
+                    {["Portfolio", "React", "All"].map((item, index) => (
+                        <div
+                            key={index}
+                            onClick={() => handleProjectsFilter(item)}
+                            className={`app__project-filter-item app__flex p-text ${
+                                activeFilter === item ? "item-active" : ""
+                            }`}
+                        >
+                            {item}
+                        </div>
+                    ))}
                 </div>
 
                 <motion.div

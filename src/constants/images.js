@@ -27,6 +27,7 @@ import logo from "../assets/logo.png";
 import portfolio from "../assets/portfolio.jpg";
 import expenseTracker from "../assets/expense-tracker.jpg";
 import mailbox from "../assets/mailbox.jpg";
+import mta from "../assets/mta.png";
 
 export default {
     email,
@@ -55,4 +56,5 @@ export default {
     portfolio,
     expenseTracker,
     mailbox,
+    mta
 };

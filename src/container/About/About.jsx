@@ -28,7 +28,7 @@ const abouts = [
     {
         title: "Cyber Crime Intervention Officer",
         description:
-            "Certified CCIO having essential knowledge for handling cyber crime cases as first responder",
+            "Certified CCIO having essential knowledge of cyber crimes & cyber laws to act as a first responder in case of cyber crimes.",
         imgUrl: images.about04,
     },
 ];
