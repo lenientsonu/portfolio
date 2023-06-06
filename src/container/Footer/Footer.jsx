@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 import { images } from "../../constants";
 import AppWrap from "../../wrapper/AppWrap";
@@ -26,6 +27,21 @@ const Footer = () => {
         });
     };
 
+    const sendToServer = async (contact) => {
+        try {
+            const response = await axios.post(
+                "https://portfolio-b3f6f-default-rtdb.asia-southeast1.firebasedatabase.app//messages.json",
+                contact
+            );
+            console.log(response.data);
+            setIsFormSubmitted(true);
+        } catch (error) {
+            alert(error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const handleSubmit = (event) => {
         setLoading(true);
 
@@ -35,9 +51,8 @@ const Footer = () => {
             message,
         };
 
-        console.log(contact);
-        setLoading(false);
-        setIsFormSubmitted(true);
+        // console.log(contact);
+        sendToServer(contact);
     };
 
     return (
