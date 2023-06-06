@@ -30,13 +30,21 @@ const Header = () => {
                             <span>👋</span>
                             <div style={{ marginLeft: 20 }}>
                                 <p className='p-text'>Hello, I am</p>
-                                <h1 className='head-text'>Sonu</h1>
+                                <h1 className='head-text'>SONU</h1>
                             </div>
                         </div>
 
                         <div className='tag-cmp app__flex'>
                             <p className='p-text'>Frontend Developer</p>
                             <p className='p-text'>Cybersecurity Analyst</p>
+                            <a
+                                href='https://drive.google.com/file/d/1PPh-fH2uV2hotYaAbw8-AIDKEAKhFxg9/view?usp=share_link'
+                                className="cv-btn"
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                Download CV
+                            </a>
                         </div>
                     </div>
                 </motion.div>
